@@ -20,5 +20,5 @@ jobs:
         with:
           node-version: 20
       - run: echo "Works"
-      - runs: echo "${{ vars.MY_VAR }}"
-      - runs: echo "${{ secrets.MY_SECRET }}"
+      - run: echo "${{ vars.MY_VAR }}"
+      - run: echo "${{ secrets.MY_SECRET }}"
