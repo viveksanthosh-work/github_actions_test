@@ -4,6 +4,9 @@ on:
   pull_request:
     branches:
       - main
+  push:
+    branches:
+      - main
 
 jobs:
   test:
@@ -17,3 +20,5 @@ jobs:
         with:
           node-version: 20
       - run: echo "Works"
+      - runs: {{ vars.MY_VAR }}
+      - runs: {{ vars.MY_SECRET }}
